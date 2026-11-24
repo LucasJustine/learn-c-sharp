@@ -6,6 +6,7 @@ public class Shader : IDisposable
 {
     private readonly int _handle;
     private bool disposedValue = false;
+    public int Handle => _handle;
 
     public Shader(string vertexPath, string fragmentPath)
     {
